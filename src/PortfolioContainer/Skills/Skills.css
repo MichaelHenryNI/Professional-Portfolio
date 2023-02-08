@@ -1,0 +1,101 @@
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0;
+}
+.skills-parent {
+  max-width: 1000px;
+  width: 70%;
+}
+.skills-card {
+  display: flex;
+  width: 100%;
+  box-shadow: 0 0px 25px -2px #1f2235;
+  flex-grow: 1;
+  overflow: hidden;
+  padding: 25px;
+  justify-content: center;
+}
+
+/*------------ MEDIA ------------------*/
+@media (max-width: 768px) {
+  .skills .container {
+    padding-left: 0;
+  }
+}
+
+.skill-parent {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 50%;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.programming-skills-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.skill-percentage {
+  position: relative;
+  height: 25px;
+  width: 70%;
+  background-color: var(--darkOrange);
+}
+
+.skill-percentage .active-percentage-bar {
+  height: 25px;
+  transition: 0.8s ease;
+  position: absolute;
+  background-color: #1f2235;
+}
+
+.skill-parent span {
+  font-family: "Poppins Bold";
+  font-size: 16px;
+  color: var(--darkOrange);
+}
+
+/*IPAD PRO RESPONSIVENESS*/
+@media only screen and (max-width: 1110px) {
+  .skills-parent {
+    width: 88%;
+  }
+}
+@media only screen and (max-width: 898px) {
+  .skills-profile,
+  .skills-profile-2 {
+    display: none;
+  }
+  .skills-details {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 466px) {
+  .skills-options {
+    display: flex;
+    flex-direction: column;
+  }
+  .skills-options .highlighted-btn {
+    margin: 24px 0 0 0 !important;
+  }
+  .skills-options button {
+    width: 100%;
+  }
+
+  .skill-parent {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+}

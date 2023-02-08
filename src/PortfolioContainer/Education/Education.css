@@ -1,0 +1,81 @@
+.education-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0 0 0;
+}
+.education-parent {
+  max-width: 1000px;
+  width: 70%;
+}
+.education-card {
+  display: flex;
+  width: 100%;
+  box-shadow: 0 0px 20px -2px #1f2235;
+}
+.education-profile {
+  width: 30%;
+  background-image: url("../../assets/Education/ulster_university.png");
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.education-profile-2 {
+  width: 30%;
+  background-image: url("../../assets/Education/st_pats.png");
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.education-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px 0px;
+}
+.education-details {
+  width: 80%;
+  text-align: justify;
+  padding: 30px;
+  font-size: 14px;
+  font-family: "Poppins SemiBold";
+  color: var(--black);
+}
+.education-date {
+  background-color: var(--darkOrange);
+  padding: 4px 12px;
+  font-size: 14px;
+  border-radius: 14px;
+  color: var(--white);
+}
+.education-description {
+  color: var(--darkOrange);
+  font-size: 16px;
+  font-family: "Poppins SemiBold";
+}
+
+.education-title {
+  font-family: "Poppins Bold";
+  font-size: 14px;
+  margin: 0 0 5px 0;
+}
+
+/*IPAD PRO RESPONSIVENESS*/
+@media only screen and (max-width: 1110px) {
+  .education-parent {
+    width: 88%;
+  }
+}
+@media only screen and (max-width: 898px) {
+  .education-profile,
+  .education-profile-2 {
+    display: none;
+  }
+  .education-details {
+    width: 100%;
+  }
+}
