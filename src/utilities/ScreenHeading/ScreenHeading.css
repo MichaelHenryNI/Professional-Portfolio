@@ -15,6 +15,7 @@
   font-size: 32px;
   color: var(--navy);
   font-family: "Poppins Bold";
+  text-align: center;
 }
 .heading-seperator {
   display: flex;

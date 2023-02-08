@@ -146,6 +146,8 @@ button .load img {
   padding-left: 15px;
   padding-right: 15px;
   margin-bottom: 1rem;
+  line-height: normal;
+  text-align: justify;
 }
 .social i {
   padding-left: 15px;
@@ -179,6 +181,12 @@ button .load img {
 @media screen and (max-width: 414px) {
   .central-form h2 {
     font-size: 16px;
+  }
+
+  .social h5 {
+    font-size: 12px;
+    line-height: normal;
+    text-align: justify;
   }
 
   .social i {

@@ -28,6 +28,7 @@ export default function Header() {
             key={Screen.screen_name}
             className={getHeaderOptionsClasses(i)}
             to={Screen.screen_name}
+            onClick={() => setShowHeaderOptions(false)}
           >
             <span>{Screen.screen_name}</span>
           </Link>

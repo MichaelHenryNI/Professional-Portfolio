@@ -51,6 +51,8 @@
   font-size: 14px;
   border-radius: 14px;
   color: var(--white);
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
 .education-description {
   color: var(--darkOrange);

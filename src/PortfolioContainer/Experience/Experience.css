@@ -24,11 +24,15 @@
   font-size: 12px;
   border-radius: 14px;
   color: var(--white);
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
 .experience-description {
   color: var(--darkOrange);
   font-size: 16px;
   font-family: "Poppins SemiBold";
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 /*EXPERIENCE TIMELINE */
