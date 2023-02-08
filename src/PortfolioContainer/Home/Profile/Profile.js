@@ -3,6 +3,7 @@ import { Link } from "react-scroll";
 import Typed from "react-typed";
 import ScrollService from "../../../utilities/ScrollService";
 import "./Profile.css";
+import cv from "../../../assets/MichaelHenryCV.pdf";
 
 export default function Profile() {
   return (
@@ -88,7 +89,7 @@ export default function Profile() {
                 Hire Me{" "}
               </button>
             </Link>
-            <a href="ehizcv.pdf">
+            <a href={cv} download="MichaelHenryCV.pdf">
               <button className="btn highlighted-btn">Download CV</button>
             </a>
           </div>
