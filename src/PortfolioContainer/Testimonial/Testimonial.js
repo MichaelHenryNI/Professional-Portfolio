@@ -20,7 +20,7 @@ export default function Testimonial(props) {
     ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
 
   const options = {
-    loop: true,
+    loop: false,
     margin: 0,
     nav: true,
     animateIn: "bounceInRight",
@@ -33,7 +33,7 @@ export default function Testimonial(props) {
         items: 1,
       },
       768: {
-        items: 1,
+        items: 2,
       },
       1000: {
         items: 2,

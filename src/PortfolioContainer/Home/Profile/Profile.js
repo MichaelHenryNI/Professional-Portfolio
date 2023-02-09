@@ -59,7 +59,8 @@ export default function Profile() {
                 <Typed
                   className="typed-text"
                   strings={[
-                    "Full Stack Developer",
+                    "Senior Dev",
+                    "Full Stack",
                     "React JS/TS",
                     ".NET",
                     "C#",
@@ -67,6 +68,7 @@ export default function Profile() {
                     "PHP Laravel",
                     "HTML",
                     "SCSS",
+                    "Azure DevOps",
                   ]}
                   typeSpeed={40}
                   backSpeed={60}
