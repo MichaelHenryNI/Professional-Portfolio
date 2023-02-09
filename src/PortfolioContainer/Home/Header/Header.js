@@ -10,15 +10,6 @@ export default function Header() {
   const [selectedScreen, setSelectedScreen] = useState(0);
   const [showHeaderOptions, setShowHeaderOptions] = useState(false);
 
-  // const updateCurrentScreen = (currentScreen) => {
-  //   if (!currentScreen || !currentScreen.screenInView) return;
-
-  //   let screenIndex = GET_SCREEN_INDEX(currentScreen.screenInView);
-  //   if (screenIndex < 0) return;
-  // };
-  // let currentScreenSubscription =
-  //   ScrollService.currentScreenBroadcaster.subscribe(updateCurrentScreen);
-
   const getHeaderOptions = () => {
     return TOTAL_SCREENS.map(
       (Screen, i) =>
@@ -44,21 +35,6 @@ export default function Header() {
 
     return classes;
   };
-
-  // const switchScreen = (index, screen) => {
-  //   let screenComponent = document.getElementById(screen.screen_name);
-  //   if (!screenComponent) return;
-
-  //   screenComponent.scrollIntoView({ behavior: "smooth" });
-  //   setSelectedScreen(index);
-  //   setShowHeaderOptions(false);
-  // };
-
-  // useEffect(() => {
-  //   return () => {
-  //     currentScreenSubscription.unsubscribe();
-  //   };
-  // }, [currentScreenSubscription]);
 
   return (
     <div className="header-container">
