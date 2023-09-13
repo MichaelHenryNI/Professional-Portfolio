@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-scroll";
-import Typed from "react-typed";
 import ScrollService from "../../../utilities/ScrollService";
 import "./Profile.css";
 import cv from "../../../assets/MichaelHenryCV.pdf";
+import { TypeAnimation } from "react-type-animation";
 
 export default function Profile() {
   return (
@@ -56,23 +56,33 @@ export default function Profile() {
             <span className="primary-text">
               {" "}
               <h1>
-                <Typed
-                  className="typed-text"
-                  strings={[
+                <TypeAnimation
+                  repeat={Infinity}
+                  sequence={[
+                    500,
                     "Senior Dev",
+                    1000,
                     "Full Stack",
+                    1000,
                     "React JS/TS",
+                    1000,
                     ".NET",
+                    1000,
                     "C#",
+                    1000,
                     "SQL",
+                    1000,
                     "PHP Laravel",
+                    1000,
                     "HTML",
+                    1000,
                     "SCSS",
+                    1000,
                     "Azure DevOps",
+                    500,
                   ]}
-                  typeSpeed={40}
-                  backSpeed={60}
-                  loop
+                  speed={50}
+                  deletionSpeed={50}
                 />
               </h1>
             </span>

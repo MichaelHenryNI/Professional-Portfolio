@@ -1,5 +1,5 @@
 import React from "react";
-import Typical from "react-typical";
+import { TypeAnimation } from "react-type-animation";
 
 import imgBack from "../../../src/images/mailz.jpeg";
 import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
@@ -23,7 +23,10 @@ export default function ContactMe(props) {
       <div className="central-form">
         <div className="col">
           <h2 className="title">
-            <Typical loop={Infinity} steps={["Get In Touch 📲", 2000]} />
+            <TypeAnimation
+              repeat={Infinity}
+              sequence={["Get In Touch 📲", 2000]}
+            />
           </h2>
         </div>
         <div className="back-form">
